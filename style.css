@@ -1,0 +1,292 @@
+*{
+    box-sizing: border-box ;
+    padding: 0 ;
+    margin: 0 ;
+    text-decoration: none ;
+    list-style: none ;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background:#000 ;
+    color: white ;
+    
+}
+
+header {
+    position: fixed ;
+    z-index: 1000 ;
+    width: 100% ;
+    top: 0 ;
+    right: 0 ;
+    display: flex ;
+    justify-content: space-between ;
+    align-items: center ;
+    padding: 13px 30px ;
+    background: transparent ;
+    transition: all ease .50s ;
+}
+
+.logo {
+    font-size: 2em ;
+    font-weight: bold ;
+    color: white ;
+    margin: 5px ;
+}
+
+.logo:hover {
+    color: black;
+}
+
+.navigation {
+    display: flex ;
+
+}
+
+.navigation a {
+    padding: 2px ;
+    margin: 0 30px ;
+    color: white ;
+    font-size: 1em ;
+    font-weight: bold ;
+    border-bottom: 2px solid transparent;
+    transition: all ease .50s ;
+}
+
+.navigation a:hover {
+    border-bottom: 2px solid transparent;
+    transform: scale(1.1) translate3d(5px , 5px , 5px );
+    color: black ;
+}
+
+.navigation a:active {
+    border-bottom: solid 2px white ;
+}
+
+
+.right-nav {
+    display: flex ;
+    align-items: center;
+}
+
+.h-btn {
+    display: inline-block ;
+    border: 1px solid #f5dca8 ;
+    padding: 9px 20px ;
+    line-height: 1.5;
+    font-size: 1em ;
+    border-radius: 30px ;
+    font-weight: bold ;
+    margin-right: 20px ;
+    color: white ;
+    transition: all ease .50s ;
+}
+
+
+.h-btn:hover {
+    border-bottom: 2px solid transparent;
+    transform: scale(1.1) translate3d(5px , 5px , 5px );
+    background: white;
+    color: black ;
+}
+
+#menu-icon {
+    font-size: 2.2em ;
+    z-index: 1000 ;
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    padding: 0 13% ;
+}
+
+.hero {
+    width: 100% ;
+    height: 100vh ;
+    position: relative ;
+    background: url(./imagesfd1/img-20240329T200453Z-001/img/background.png);
+    background-size: cover ;
+    background-position: center bottom ;
+}
+
+.container {
+    padding-top: 250px;
+}
+
+
+.container h6 {
+    font-size: 1em ;
+    font-weight: 400 ;
+    margin-bottom: 30px;
+}
+
+.container h1 {
+    font-size: 6.1em ;
+    margin: 0px 0px 30px ;
+    line-height: 1 ;
+    text-transform: uppercase ;
+    transition: all ease .50s ;
+    font-family: "Permanent Marker", cursive;
+}
+
+.container h1:hover {
+    color: black ;
+    transform: scale(1.1) translate3d(5px , 5px , 5px );
+}
+
+.container h3 {
+    font-size: 1.1em;
+    font-weight: bold ;
+}
+
+.container p {
+    width: 500px ;
+    max-width: 100%;
+    line-height: 2 ;
+    font-size: 1em ;
+    margin-bottom: 50px;
+}
+
+
+.main-btnn {
+    display: inline-block;
+    color: black;
+    background: white;
+    border: 1px solid white;
+    padding: 9px 25px;
+    line-height: 1.4;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: 600;
+    transition: all ease .50s;
+}
+
+.main-btnn:hover {
+    transform: scale(1.1) translate3d(5px , 5px , 5px );
+    color: white;
+    background: transparent ;
+    border: 1px solid #f5dca8;
+}
+
+
+.main-btnn a.cta{ 
+    color: white ;
+    border: 1px solid #f5dca8 ;
+    background: transparent ;
+    margin-left: 20px ;
+    transition: all ease .50s ;
+    border-radius: 15px ;
+}
+
+.main-btnn a.cta:hover {
+   color: black ;
+   background: white ;
+   border: solid 1px white ;
+}
+
+.main-btnn a.cta i {
+   margin-right: 8px ;
+}
+
+.social-icons {
+    position: absolute ;
+    bottom: 5% ;
+    left: 13% ;
+}
+
+.social-icons i {
+    display: inline-block ;
+    color: #f5dcac ;
+    margin-right: 1.55em ;
+    font-size: 1.6em ;
+    transition: all ease .50s;
+}
+
+.social-icons i:hover {
+    color: black ;
+    transform: scale(1.1) translate3d(5px , 5px , 5px ) translateY(-5px);
+}
+
+@media (max-width:1450px){
+    header{
+        padding: 17px 8% ;
+    }
+    section {
+        padding: 0 8%;
+    }
+    .social-icons {
+        left: 8% ;
+    }
+    .container{
+        padding-top: 230px;
+    }
+}
+
+@media (max-width:1100px) {
+    .container {
+        font-size: 88px ;
+        margin: 0px 25px ;
+    }
+    .container p {
+        margin-bottom: 30px ;
+    }
+    .container h6 {
+        margin-bottom: 20px ;
+    }
+}
+
+@media (max-width:950px) {
+    header{
+        padding: 17px 5% ;
+    }
+    section {
+        padding: 0 5%;
+    }
+    .social-icons {
+        left: 5% ;
+} 
+}
+
+@media (max-width:860px) {
+    #menu-icon {
+        display: block ;
+    }
+
+    .navigation {
+        position: absolute;
+        width: 100%;
+        height: 100vh ;
+        padding: 50px 50px ;
+        top: 0 ;
+        right: 0 ;
+        left: 100% ;
+        bottom: 0 ;
+        display: flex ;
+        flex-direction: column ;
+        background: #db8c1c;
+        transition: all ease .50s;
+    }
+    .navigation a {
+        display: block ;
+        padding: 0px ;
+        margin: 0px 0px 40px 0px ;
+        font-size: 2rem ;
+        font-weight: 400 ;
+        color: #f5dcac ;
+        border-bottom:  none ;
+    }
+    .navigation a.active {
+        border-bottom: none ;
+    }
+    .navigation a:hover {
+        border-bottom: none; 
+        color: white ;
+    }
+}
+
+@media (max-width:535px) {
+    .container h1 {
+        font-size: 70px ;
+    }
+}
